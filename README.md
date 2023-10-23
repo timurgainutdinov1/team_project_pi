@@ -15,11 +15,11 @@ Vision Transformer (ViT) по сути представляет собой BERT,
 Использование модели на платформе Google Colab
 
 1) Выполнить установку библиотеки "transformers":
-
+```python
 !pip install transformers
-
+```
 2) Выполнить следующий код, присвоив переменной url значение - ссылку на анализируемое изображение.
-
+```python
 from transformers import ViTImageProcessor, ViTForImageClassification
 from PIL import Image
 import requests
@@ -36,3 +36,4 @@ logits = outputs.logits
 # model predicts one of the 1000 ImageNet classes
 predicted_class_idx = logits.argmax(-1).item()
 print("Predicted class:", model.config.id2label[predicted_class_idx])
+```
