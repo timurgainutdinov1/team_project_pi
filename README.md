@@ -16,10 +16,6 @@ Vision Transformer (ViT) по сути представляет собой BERT,
 
 Модель ViT была предварительно обучена на ImageNet-21k , наборе данных, состоящем из 14 миллионов изображений и 21 тысяч классов, и доработана на ImageNet , наборе данных, состоящем из 1 миллиона изображений и 1 тысяч классов.
 
-## Обновленная модель Streamlit
-
-Предобученная модель была обновлена и развернута в веб версии, файл image_classification_streamlit.py
-
 ## Использование модели на платформе Google Colab
 
 1) Выполнить установку библиотеки "transformers":
@@ -44,4 +40,11 @@ logits = outputs.logits
 # model predicts one of the 1000 ImageNet classes
 predicted_class_idx = logits.argmax(-1).item()
 print("Predicted class:", model.config.id2label[predicted_class_idx])
+```
+
+## Использование веб-версии модели
+1) Сохранить файл image_classification_streamlit.py
+2) Выполнить команду:
+```
+streamlit run image_classification_streamlit.py
 ```
