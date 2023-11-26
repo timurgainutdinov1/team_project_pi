@@ -48,3 +48,8 @@ print("Predicted class:", model.config.id2label[predicted_class_idx])
 ```
 streamlit run image_classification_streamlit.py
 ```
+
+## Просмотр API
+1) сохранить файл image_classification_fastapi.py
+2) выполнить команду pip install -r requirements.txt для загрузки необходимых библиотек
+3) выполнить код
