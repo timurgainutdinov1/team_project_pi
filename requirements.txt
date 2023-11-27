@@ -1,5 +1,6 @@
 fastapi
 uvicorn
-transformers
+transformers[torch]
 requests
 Pillow
+pydantic
