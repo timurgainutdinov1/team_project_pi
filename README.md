@@ -43,13 +43,17 @@ print("Predicted class:", model.config.id2label[predicted_class_idx])
 ```
 
 ## Использование веб-версии модели
+Для локального использования модели необходимо:
 1) Сохранить файл image_classification_streamlit.py
-2) Выполнить команду:
+2) В командной строке перейти в папку с проектом и выполнить команду:
 ```
 streamlit run image_classification_streamlit.py
 ```
+Для использования модели, развернутой в облаке _Streamlit_  необходимо перейти по [ссылке](https://timurgainutdinov1-team-pr-image-classification-streamlit-1fvl8t.streamlit.app/).
 
 ## Просмотр API
-1) сохранить файл image_classification_fastapi.py
-2) выполнить команду pip install -r requirements.txt для загрузки необходимых библиотек
-3) выполнить код
+1) Cохранить файл image_classification_fastapi.py
+2) В командной строке перейти в папку с проектом и выполнить следующую команду:
+```
+uvicorn image_classification_fastapi:app
+```

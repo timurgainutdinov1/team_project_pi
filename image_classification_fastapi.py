@@ -15,10 +15,12 @@ processor = ViTImageProcessor.from_pretrained('google/vit-base-patch16-224')
 # Модель для классификации изображений
 model = ViTForImageClassification.from_pretrained('google/vit-base-patch16-224')
 
+
 # Получение изображения
 def load_image(url):
     img = Image.open(requests.get(url, stream=True).raw)
     return img
+
 
 # Обработка и распознавание изображения
 def image_classification(picture):
@@ -27,6 +29,7 @@ def image_classification(picture):
     logits = outputs.logits
     predicted_class_idx = logits.argmax(-1).item()
     return model.config.id2label[predicted_class_idx]
+
 
 # Маршрут для корневого URL-адреса
 @app.get("/")

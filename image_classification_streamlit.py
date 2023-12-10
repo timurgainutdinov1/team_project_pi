@@ -56,8 +56,7 @@ if result:
         loaded_image = load_image(link)
         with st.spinner('Идет обработка... Пожалуйста, подождите...'):
             result = image_classification(loaded_image)
-        st.write('**Результаты распознавания:**')
-        st.write(result)
+        st.markdown(f'Результаты распознавания: :rainbow[{result}]')
         st.snow()
     # Обработка исключений, которые приведут к ошибке в случае отсутствия ссылки
     # или указания ссылки на объект, который не является изображением
