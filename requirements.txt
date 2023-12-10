@@ -4,3 +4,4 @@ transformers[torch]
 requests
 Pillow
 pydantic
+streamlit
