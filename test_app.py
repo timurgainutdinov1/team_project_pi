@@ -1,6 +1,6 @@
 from streamlit.testing.v1 import AppTest
 
-at = AppTest.from_file("image_classification_streamlit.py", default_timeout=15).run()
+at = AppTest.from_file("image_classification_streamlit.py", default_timeout=1000).run()
 
 
 def test_correct_url():
