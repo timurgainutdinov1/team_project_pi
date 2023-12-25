@@ -2,6 +2,8 @@
 
 ## Ссылка на приложение в облаке 
 https://timurgainutdinov1-team-pr-image-classification-streamlit-1fvl8t.streamlit.app/
+Пример ссылки на изображение:
+https://goo.su/TDcn
 
 ## Команда:  
 
