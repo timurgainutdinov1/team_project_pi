@@ -1,4 +1,7 @@
-# team_project_pi 
+# team_project_pi
+
+## Ссылка на приложение в облаке 
+https://timurgainutdinov1-team-pr-image-classification-streamlit-1fvl8t.streamlit.app/
 
 ## Команда:  
 
